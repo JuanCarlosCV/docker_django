@@ -1,0 +1,26 @@
+
+1.- Ejecurar.- 
+ sudo docker-compose run web django-admin startproject composeexample .
+
+2.- se crea un directorio composeexample/
+
+se cambia 
+composeexample/settings.py 
+_____________________________________________________
+Replace the DATABASES = ... with the following:
+__________________________________________________
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
+    }
+}
+
+3.- de ejecuta la imagen
+		sudo docker-compose up
+
+
+
