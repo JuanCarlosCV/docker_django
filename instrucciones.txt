@@ -1,5 +1,5 @@
 
-1.- Ejecurar.- 
+1.- Ejecutar.- 
  sudo docker-compose run web django-admin startproject composeexample .
 
 2.- se crea un directorio composeexample/
